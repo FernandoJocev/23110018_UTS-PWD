@@ -1,0 +1,33 @@
+.main-content .background-image {
+  position: relative;
+  z-index: -999;
+  margin-bottom: 52px;
+}
+
+.main-content .background-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.main-content .background-image .overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 4px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.main-content #images {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+}
+
+.main-content #images img {
+  width: 50%;
+}

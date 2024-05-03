@@ -1,0 +1,115 @@
+* {
+  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  background-color: var(--circle-color);
+  width: 400px;
+  height: 400px;
+  bottom: -350px;
+  left: -150px;
+  border-radius: 50%;
+  filter: blur(5rem);
+}
+
+.rectangle {
+  position: absolute;
+  right: 0;
+  filter: blur(5rem);
+  z-index: -999;
+  background-color: var(--circle-color);
+  width: 400px;
+  height: 200px;
+  position: absolute;
+}
+
+.rectangle-2 {
+  position: absolute;
+  right: 0;
+  filter: blur(5rem);
+  z-index: -999;
+  background-color: var(--circle-color);
+  width: 700px;
+  height: 150px;
+  position: absolute;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+.main-content .left-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.main-content .left-container .name-title {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.main-content .left-container .name-title h2 {
+  color: var(--inactive-link);
+  font-weight: 600;
+}
+
+.main-content .left-container .name-title h1 {
+  font-weight: 600;
+}
+
+.main-content .left-container hr {
+  height: 5px;
+  width: 15%;
+  background-color: var(--additional-color);
+  border: none;
+  border-radius: 2px;
+}
+
+.main-content .left-container p {
+  width: 250px;
+  color: var(--inactive-link);
+}
+
+.main-content .left-container a {
+  text-decoration: none;
+}
+
+.main-content .left-container .about-me-link {
+  color: var(--secondary-additional-color);
+  display: flex;
+  font-weight: 600;
+}
+
+.main-content .left-container .about-me-link p {
+  color: var(--secondary-additional-color);
+}
+
+.main-content .right-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+}
+
+.main-content .right-container .about {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  text-align: end;
+}
+
+.main-content .right-container .about p {
+  color: var(--inactive-link);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.main-content .right-container .about h1 {
+  font-size: 1.7rem;
+}

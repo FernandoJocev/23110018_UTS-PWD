@@ -1,0 +1,56 @@
+@keyframes bounce {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 20px, 0);
+  }
+}
+
+.main-content .map {
+  width: 100%;
+  height: 45vh;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.main-content .scroll-down {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-bottom: 80px;
+}
+
+.main-content .scroll-down img {
+  animation-name: bounce;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.main-content .about-region-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.main-content .about-region-container .about-region-card {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  background-color: #4b425c64;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.main-content .about-region-container .about-region-card .about-region-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.main-content .about-region-container .about-region-card img {
+  border-radius: 5px;
+  box-shadow: var(--additional-color) 10px 10px;
+}

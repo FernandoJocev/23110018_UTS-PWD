@@ -1,0 +1,22 @@
+.main-content {
+  display: flex;
+  column-gap: 20px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.some-info {
+  display: grid;
+  grid-template-columns: repeat(2, 30%);
+  row-gap: 10px;
+}
+
+.some-info .card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}

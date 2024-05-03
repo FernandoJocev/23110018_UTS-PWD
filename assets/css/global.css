@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* Variables */
+  --main-bg: #030e21;
+  --inactive-link: #868490;
+  --secondary-font-title: #d1d1d1;
+  --secondary-font-color: #aca479;
+  --primary-font-color: #fff;
+  --additional-color: #f8e7a1;
+  --secondary-additional-color: #e0d091;
+  --circle-color: #22438f;
+}
+
+/* Global Classes */
+.hidden {
+  animation-name: fall !important;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.mini-circle {
+  position: absolute;
+  background-color: var(--secondary-additional-color);
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  right: 0;
+}
+
+/* KeyFrames */
+@keyframes ascend {
+  from {
+    content: '';
+    opacity: 0;
+    transform: translateY(10vh);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fall {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    content: '';
+    transform: translateY(10vh);
+  }
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--main-bg);
+  color: var(--primary-font-color);
+}
+
+nav {
+  display: flex;
+  padding: 40px 50px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-font-color);
+}
+
+nav .name {
+  position: relative;
+  width: 250px;
+  cursor: pointer;
+}
+
+nav .name h1 {
+  color: var(--secondary-font-title);
+}
+
+nav .links {
+  display: flex;
+  column-gap: 70px;
+}
+
+nav .links a {
+  text-decoration: none;
+  color: var(--inactive-link);
+  transition: all ease-in-out 200ms;
+}
+
+nav .links #campus-overlay {
+  display: grid;
+  animation-name: ascend;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  color: var(--primary-font-color);
+  margin-top: 10px;
+  position: absolute;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  background-color: #3c6bc3;
+  padding: 20px 20px;
+  border-radius: 2px;
+}
+
+nav .links #campus-overlay a {
+  color: var(--primary-font-color);
+}
+
+/* Links On Hover */
+nav .links a:hover {
+  text-decoration: none;
+  color: var(--primary-font-color);
+}
+
+nav .links #campus-overlay a:hover {
+  color: var(--circle-color);
+}
+
+.main-content {
+  padding: 0px 50px;
+  margin-bottom: 50px;
+}

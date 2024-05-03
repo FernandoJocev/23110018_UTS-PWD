@@ -1,0 +1,12 @@
+Pages :
+1.  Landing Page
+2.  About
+3.  Domicile
+4.  Education
+    - Campus
+    - STI
+    - BD
+    - KWU
+    - About Lecturer 
+9.  Interest
+10.  Projects

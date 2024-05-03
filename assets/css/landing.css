@@ -3,37 +3,8 @@
   overflow: hidden;
 }
 
-.circle {
-  position: absolute;
-  background-color: var(--circle-color);
-  width: 400px;
-  height: 400px;
-  bottom: -350px;
-  left: -150px;
-  border-radius: 50%;
-  filter: blur(5rem);
-}
-
-.rectangle {
-  position: absolute;
-  right: 0;
-  filter: blur(5rem);
-  z-index: -999;
-  background-color: var(--circle-color);
-  width: 400px;
-  height: 200px;
-  position: absolute;
-}
-
-.rectangle-2 {
-  position: absolute;
-  right: 0;
-  filter: blur(5rem);
-  z-index: -999;
-  background-color: var(--circle-color);
-  width: 700px;
-  height: 150px;
-  position: absolute;
+img {
+  border-radius: 5px;
 }
 
 .main-content {
